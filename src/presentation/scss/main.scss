@@ -1,0 +1,14 @@
+@import "globals";
+@import "to-do-list";
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+.flex{
+  display: flex;
+
+}
