@@ -35,7 +35,7 @@ function App() {
 
 
     const updateList = (task) => {
-        const data=getTasks();
+
 
        // setTasks([...tasks]);
         const newTasks=[
@@ -51,6 +51,10 @@ function App() {
     }
   return (
     <div className="container">
+        <div>
+            <h1>To Do List</h1>
+            <p>This is a web app written by Tehillah Kangamba. Please enter task.</p>
+        </div>
         <div className="flex">
             <div className="app">
                 <Header update={updateList} />
