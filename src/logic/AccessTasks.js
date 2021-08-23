@@ -1,4 +1,4 @@
-const tasks=[
+let tasks=[
     {
         id:"yyuiooppqqq",
         value:"Get bread"
@@ -20,12 +20,14 @@ function getTasks(){
 
 //add task to task table
 function addTask(task){
-    tasks.push(
+    const newTasks=[
+        ...tasks,
         {
-            id:generateID(task),
-            value: task,
+            id:`task${task}`,
+            value:task
         }
-    )
+    ]
+    tasks =newTasks;
 }
 
 export  {getTasks,addTask}

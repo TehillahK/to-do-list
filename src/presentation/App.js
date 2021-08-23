@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 
 function onClick(text,updateList){
     console.log(`you entered ${text}`)
-   // addTask(text)
+    addTask(text)
     updateList(text)
 }
 
@@ -37,15 +37,8 @@ function App() {
     const updateList = (task) => {
 
 
-       // setTasks([...tasks]);
-        const newTasks=[
-            ...tasks,
-            {
-                id:`task${task}`,
-                value:task
-            }
-        ]
-        setTasks(newTasks)
+        const data=getTasks();
+        setTasks(data)
         console.log("refresh")
         console.log(tasks)
     }
